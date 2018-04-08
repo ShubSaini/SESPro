@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shubham.sespro.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="257dp">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <Button
+        android:id="@+id/SpeechToText"
+        android:layout_width="194dp"
+        android:layout_height="48dp"
+        android:text="Speech To Text"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <Button
+        android:id="@+id/ImageToMp3"
+        android:layout_width="194dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:text="Image To Mp3"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <Button
+        android:id="@+id/TextToSpeech"
+        android:layout_width="194dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:text="Text To Speech"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="352dp" />
+
+</android.support.constraint.ConstraintLayout>
