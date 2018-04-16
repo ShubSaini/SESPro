@@ -12,8 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="257dp">
+        app:layout_constraintBottom_toTopOf="@+id/ImageToMp3"
+        app:layout_constraintTop_toBottomOf="@+id/SpeechToText"
+        tools:layout_editor_absoluteX="95dp">
 
     </android.support.design.widget.AppBarLayout>
 
@@ -22,8 +23,9 @@
         android:layout_width="194dp"
         android:layout_height="48dp"
         android:text="Speech To Text"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="178dp" />
+        app:layout_constraintBottom_toTopOf="@+id/appBarLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="95dp" />
 
     <Button
         android:id="@+id/ImageToMp3"
@@ -31,8 +33,9 @@
         android:layout_height="48dp"
         android:layout_weight="1"
         android:text="Image To Mp3"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="259dp" />
+        app:layout_constraintBottom_toTopOf="@+id/TextToSpeech"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        tools:layout_editor_absoluteX="95dp" />
 
     <Button
         android:id="@+id/TextToSpeech"
@@ -40,7 +43,8 @@
         android:layout_height="48dp"
         android:layout_weight="1"
         android:text="Text To Speech"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="352dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageToMp3"
+        tools:layout_editor_absoluteX="95dp" />
 
 </android.support.constraint.ConstraintLayout>
